@@ -231,6 +231,9 @@
   UefiScsiLib|MdePkg/Library/UefiScsiLib/UefiScsiLib.inf
   CpuExceptionHandlerLib|TdvfPkg/Override/UefiCpuPkg/Library/CpuExceptionHandlerLib/DxeCpuExceptionHandlerLib.inf
 
+  RealTimeClockLib|OvmfPkg/Library/XenRealTimeClockLib/XenRealTimeClockLib.inf
+  TimeBaseLib|EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
+
 [LibraryClasses.common]
   VmgExitLib|OvmfPkg/Library/VmgExitLib/VmgExitLib.inf
   VmTdExitLib|TdvfPkg/Library/VmTdExitLib/VmTdExitLib.inf
@@ -520,7 +523,7 @@
       ResetSystemLib|OvmfPkg/Library/ResetSystemLib/DxeResetSystemLib.inf
   }
   MdeModulePkg/Universal/Metronome/Metronome.inf
-  PcAtChipsetPkg/PcatRealTimeClockRuntimeDxe/PcatRealTimeClockRuntimeDxe.inf
+  EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
   MdeModulePkg/Universal/BdsDxe/BdsDxe.inf {
     <LibraryClasses>
